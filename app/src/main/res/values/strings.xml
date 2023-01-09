@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="text"><b>Find Your Delicious Food</b></string>
+    <string name="Cat"><b>Category</b></string>
+    <string name="pop"><b>Popular Now</b></string>
+    <string name="pizza"><b>Pizza</b></string>
+    <string name="drinks"><b>Drinks</b></string>
+    <string name="burger"><b>Burger</b></string>
+    <string name="donuts"><b>Donuts</b></string>
+    <string name="cake"><b>Pastry</b></string>
+    <string name="coffe"><b>Coffee</b></string>
+    <string name="biriyani"><b>Biriyani</b></string>
+    <string name="chickenbiriyani"><b>Chicken Biriyani</b></string>
+    <string name="sandwich"><b>Sandwich</b></string>
+    <string name="italian"><b>Italian Pizza</b></string>
+    <string name="spicyburger"><b>Spicy Burger</b></string>
+    <string name="regularburger"><b>Regular Burger</b></string>
+    <string name="chocolatepastry"><b>Chocolate Pastry</b></string>
+    <string name="cheesypizza"><b>Cheesy Pizza</b></string>
+    <string name="chickenpizza"><b>Chicken Pizza</b></string>
+    <string name="bbqbeef"><b>BBQ Beef Pizza</b></string>
+    <string name="mixedpizza"><b>Mixed Pizza</b></string>
+    <string name="pepperoni"><b>Pepperoni Pizza</b></string>
+</resources>

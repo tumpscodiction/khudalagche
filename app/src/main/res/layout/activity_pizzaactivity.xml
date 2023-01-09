@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pizzaactivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/navigationmenu"
+        />
+    <LinearLayout
+        android:id="@+id/profilebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/profile"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Keywords"
+            android:drawableLeft="@drawable/searchbar"
+            android:textColor="@color/sweet"
+            android:drawableTint="@color/black"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/poptxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pop"
+        android:layout_below="@id/profilebar"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/darkash"
+        android:textSize="20sp"
+        />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/poptxt"
+        android:layout_alignParentLeft="true"
+        android:background="@color/darkash"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_alignParentLeft="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_height="190dp"
+                    android:layout_width="190dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:id="@+id/firstimg"
+                        android:layout_height="150dp"
+                        android:layout_width="150dp"
+                        android:background="@drawable/chickenpizza"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/firtsitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chickenpizza"
+                        android:gravity="center"
+                        android:textColor="@color/sweet"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/itapizza"
+                    android:layout_height="190dp"
+                    android:layout_width="190dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/secondimg"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/italianpizza" />
+
+                    <TextView
+                        android:id="@+id/seconditem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/italian"
+                        android:gravity="center"
+                        android:textColor="@color/sweet"/>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_height="190dp"
+                    android:layout_width="190dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:id="@+id/thirdimg"
+                        android:layout_height="150dp"
+                        android:layout_width="150dp"
+                        android:background="@drawable/bbqbeefpizza"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/thirditem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bbqbeef"
+                        android:gravity="center"
+                        android:textColor="@color/sweet"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="190dp"
+                    android:layout_width="190dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/fourthimg"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/mixedpizza" />
+
+                    <TextView
+                        android:id="@+id/fourthitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/mixedpizza"
+                        android:textColor="@color/sweet" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_height="190dp"
+                    android:layout_width="190dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/fifthimg"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/pepperoni" />
+
+                    <TextView
+                        android:id="@+id/fifthitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pepperoni"
+                        android:gravity="center"
+                        android:textColor="@color/sweet"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="190dp"
+                    android:layout_width="190dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:id="@+id/sixthimg"
+                        android:layout_height="150dp"
+                        android:layout_width="150dp"
+                        android:background="@drawable/chessypizza"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/sixthitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cheesypizza"
+                        android:gravity="center"
+                        android:textColor="@color/sweet"/>
+                </LinearLayout>
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
