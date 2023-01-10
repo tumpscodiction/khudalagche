@@ -2,22 +2,15 @@ package com.example.finalproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.ArrayList;
 
 public class Cart extends AppCompatActivity {
     BottomNavigationView navigator;
@@ -84,7 +77,7 @@ public class Cart extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Cart.this,"Order Complete",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(Cart.this,HomePage.class);
+                Intent intent=new Intent(Cart.this, HomePage1.class);
             }
         });
 
@@ -101,7 +94,7 @@ public class Cart extends AppCompatActivity {
                         break;
 
                     case R.id.home:
-                        Intent intent1=new Intent(getApplicationContext(),HomePage.class);
+                        Intent intent1=new Intent(getApplicationContext(), HomePage1.class);
                         startActivity(intent1);
                         finish();
                         break;
